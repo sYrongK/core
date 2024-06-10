@@ -7,7 +7,7 @@ plugins {//gradle 플러그인을 설정하여 프로젝트에 추가 기능을 
 }
 
 group = 'org.example'//프로젝트 그룹ID
-version = '0.0.1-SNAPSHOT'//현재 프로젝트 버전
+version = '0.0.2-SNAPSHOT'//현재 프로젝트 버전
 description = 'core'
 
 java {
