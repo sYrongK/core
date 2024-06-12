@@ -7,7 +7,7 @@ plugins {//gradle 플러그인을 설정하여 프로젝트에 추가 기능을 
 }
 
 group = 'org.example'//프로젝트 그룹ID
-version = '0.0.5-SNAPSHOT'//현재 프로젝트 버전
+version = '0.0.6-SNAPSHOT'//현재 프로젝트 버전
 description = 'core'
 
 java {
@@ -23,8 +23,8 @@ repositories {//의존성을 다운로드할 repository 설정
 def lombokVersion = '1.18.32'
 
 dependencies {//프로젝트가 의존하는 라이브러리와 모듈 설정
-    api 'org.springframework.boot:spring-boot-starter-data-redis:3.2.1'
-    api 'org.springframework.boot:spring-boot-starter-actuator:3.2.1'
+//    api 'org.springframework.boot:spring-boot-starter-data-redis:3.2.1'
+//    api 'org.springframework.boot:spring-boot-starter-actuator:3.2.1'
     api 'org.springframework.boot:spring-boot-starter-data-jpa:3.2.1'
     api 'org.springframework.boot:spring-boot-starter-jdbc:3.2.1'
 //    api 'org.springframework.boot:spring-boot-starter-amqp:3.2.1'
@@ -35,7 +35,6 @@ dependencies {//프로젝트가 의존하는 라이브러리와 모듈 설정
     }
 //    api 'org.springframework.boot:spring-boot-starter-log4j2'
     api 'org.springframework.boot:spring-boot-test'
-
     compileOnly "org.projectlombok:lombok:${lombokVersion}"
     annotationProcessor "org.projectlombok:lombok:${lombokVersion}"
     testAnnotationProcessor "org.projectlombok:lombok:${lombokVersion}"
