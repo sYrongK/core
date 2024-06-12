@@ -33,6 +33,7 @@ dependencies {//프로젝트가 의존하는 라이브러리와 모듈 설정
     api ('org.springframework.boot:spring-boot-starter-web:3.2.1') {
         exclude group: 'org.springframework.boot', module: 'spring-boot-starter-tomcat'
     }
+
 //    api 'org.springframework.boot:spring-boot-starter-log4j2'
     api 'org.springframework.boot:spring-boot-test'
 
