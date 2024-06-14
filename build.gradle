@@ -42,6 +42,7 @@ dependencies {//프로젝트가 의존하는 라이브러리와 모듈 설정
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
+
 publishing {//배포 설정 task (artifact 정의 및 배포 설정) - Gradle의 maven-publish 플로그인을 사용???
     publications {//하나 이상의 배포 설정 task block
         mavenJava(MavenPublication) {// mavenJava 라는 이름의 maven 배포 설정 - mavenJava 이름으로 안에 소스코드Jar, Javadoc jar 등을 포함시킬 수 있다.
@@ -59,7 +60,11 @@ publishing {//배포 설정 task (artifact 정의 및 배포 설정) - Gradle의
     }
     repositories {//배포를 어디로 할지 repository 설정. Maven, Ivy 등의 레포지토리 설정 가능
         maven {//maven repository 설정. maven-publish 플러그인과 함꼐 사용한다.
-            url = uri('file://Users/syrongk10/projects/syrongk/repos')
+            url = uri('https://maven.pkg.github.com/sYrongK/core-repository')
+            credentials {
+                username = 'sYrongK'
+                password = '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'
+            }
         }
     }
 }
@@ -101,4 +106,3 @@ sourceSets {//소스 코드와 리소스 파일의 디렉토리 설정
 //buildscript {//빌드 스크립트에서 사용할 의존성 설정
 //
 //}
-
