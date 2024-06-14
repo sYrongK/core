@@ -7,7 +7,8 @@ import lombok.Getter;
 @AllArgsConstructor
 public enum ErrorCode {
 
-    FORBIDDEN(90001, "금지된 요청입니다.")
+    FORBIDDEN(90001, "금지된 요청입니다."),
+    NOT_FOUND(90002, "요청을 찾을 수 없습니다.")
     ;
 
     private final int code;
